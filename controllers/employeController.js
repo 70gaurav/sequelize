@@ -4,6 +4,7 @@ import  express  from "express";
 const router = express.Router()
 
 
+
 export const list =  async (req, res) => {
     try {
       const employe = await Employe.findAll();
@@ -19,13 +20,21 @@ export const list =  async (req, res) => {
   export const add =  async (req, res) => {
     try {
         const { employeName , employeEmail , employeDob , employeCountry , joiningDate } = req.body
+        console.log(employeName , employeEmail , employeDob , employeCountry , joiningDate)
+        const image = req.file;
+
+  
+      if (!image) {
+        return res.status(400).send('Image file is required.');
+      }
         
       const newEmploye = await Employe.create({
          employeName : employeName ,
          employeEmail : employeEmail,
          employeDob : employeDob ,
          employeCountry : employeCountry,
-         joiningDate : joiningDate
+         joiningDate : joiningDate,
+         image: image.filename,
       });
       console.log('employe created:', newEmploye.toJSON());
       
@@ -35,6 +44,8 @@ export const list =  async (req, res) => {
       res.status(500).send('Error creating user.');
     }
   };
+
+
   
   
   export const update =  async ( req , res) => {

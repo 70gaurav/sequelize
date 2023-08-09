@@ -29,6 +29,10 @@ const Employe = Connection.define('employe', {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  image: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  }
 }, {
   tableName: 'employe',
   createdAt: 'createdAt',
