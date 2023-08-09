@@ -18,14 +18,14 @@ export const list =  async (req, res) => {
   
   export const add =  async (req, res) => {
     try {
-        const { name , email , dob , country , joining } = req.body
-        console.log(name  , dob , country , joining)
+        const { employeName , employeEmail , employeDob , employeCountry , joiningDate } = req.body
+        
       const newEmploye = await Employe.create({
-         employeName : name ,
-         employeEmail : email,
-         employeDob : dob ,
-         employeCountry : country,
-         joiningDate : joining
+         employeName : employeName ,
+         employeEmail : employeEmail,
+         employeDob : employeDob ,
+         employeCountry : employeCountry,
+         joiningDate : joiningDate
       });
       console.log('employe created:', newEmploye.toJSON());
       
@@ -37,35 +37,22 @@ export const list =  async (req, res) => {
   };
   
   
-//   app.post("/find" , (async(req ,res) => {
-//    try { const {name} = req.body
-//       const foundUser = await User.findOne({ where: { username: name } });
-//       console.log('User found:', foundUser.toJSON());
-//       res.send(foundUser.toJSON())}
-  
-//       catch (err){
-//         console.log(err)
-//         res.status(500).send("user not found")
-  
-//       }
-//   }))
-  
   export const update =  async ( req , res) => {
     try{
-      const { email ,name ,dob , country , joining } = req.body
-      const employe = await Employe.findOne({where : {employeEmail : email}})
+      const { employeEmail ,employeName ,employeDob , employeCountry , joiningDate } = req.body
+      const employe = await Employe.findOne({where : {employeEmail : employeEmail}})
       
       employe.update({
-        employeName : name , 
-        employeDob : dob,
-        employeCountry : country ,
-        joiningDate : joining
+        employeName : employeName , 
+        employeDob : employeDob,
+        employeCountry : employeCountry ,
+        joiningDate : joiningDate
         
       })
   
-      console.log("employeUpdated :" , employe.toJSON())
+      console.log("employeUpdated : " , employe.toJSON())
   
-      res.send("employeupdated :" , employe.toJSON())
+      res.status(200).send("employeupdated : " , employe.toJSON())
     }
   
     catch(error) {
@@ -77,15 +64,13 @@ export const list =  async (req, res) => {
 
 export const deleteEmploye  = async (req, res) => {
   try {
-    const { name  } = req.body;
-    const employe = await Employe.findOne({ where: { EmployeName: name } });
+    const { employeEmail  } = req.body;
+    const employe = await Employe.findOne({ where: { employeEmail: employeEmail } });
 
     if (employe) {
       await employe.destroy();
       console.log("Employee Deleted:", employe.toJSON());
       res.status(200).send("Employee Deleted: " + JSON.stringify(employe.toJSON()));
-    } else {
-      res.status(404).send("Employee not found");
     }
   } catch (error) {
     console.log("Employee not deleted:", error);

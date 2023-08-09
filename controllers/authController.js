@@ -7,7 +7,7 @@ const router = express.Router();
 
 export const signup = async (req, res) => {
   const { userName, userEmail, contactNumber, password } = req.body;
-
+  console.log(req.body);
   try {
     const existingUser = await User.findOne({
       where: {

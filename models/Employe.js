@@ -13,21 +13,20 @@ const Employe = Connection.define('employe', {
     allowNull: false,
   },
   employeEmail: {
-    type: DataTypes.TEXT,
+    type: DataTypes.STRING,
     allowNull: false,
     unique: true,
   },
   employeDob: {
-    type: DataTypes.STRING,
+    type: DataTypes.DATE,
     allowNull: false,
-    unique: true,
   },
   employeCountry: {
     type: DataTypes.STRING,
     allowNull: false,
   },
   joiningDate: {
-    type: DataTypes.TEXT,
+    type: DataTypes.STRING,
     allowNull: false,
   },
 }, {

@@ -1,12 +1,15 @@
 import express from 'express';
-import { add ,deleteEmploye,list, update } from "../controllers/employeController.js"
+import { verifyToken } from '../middleware/middleware.js'; 
+import { list, add, update, deleteEmploye } from '../controllers/employeController.js';
 
-const employeRouter = express.Router();
+const router = express.Router();
 
-employeRouter.post("/add" , add);
-employeRouter.get("/list" , list);
-employeRouter.post("/delete" , deleteEmploye)
-employeRouter.post("/update" , update)
-// employeRouter.post();
 
-export default employeRouter;
+// router.use(verifyToken);
+
+router.post('/add', add);
+router.get('/list', list);
+router.post('/delete', deleteEmploye);
+router.post('/update', update);
+
+export default router;
