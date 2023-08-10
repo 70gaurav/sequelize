@@ -3,6 +3,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import authRouter from './routes/authRoutes.js';
 import employeRouter from './routes/employeRoutes.js';
+import countryRouter from "./routes/countryRoutes.js"
 import swaggerUI from 'swagger-ui-express';
 import swaggerJsDoc from 'swagger-jsdoc';
 
@@ -12,6 +13,8 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use('/auth', authRouter);
 app.use('/employe', employeRouter);
+app.use('/country', countryRouter)
+
 
 const options = {
   definition: {
