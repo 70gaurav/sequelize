@@ -1,5 +1,6 @@
 import Employe from "../models/Employe.js";
 import  express  from "express";
+import logger from "../logger/logger.js";
 
 const router = express.Router()
 
@@ -10,10 +11,12 @@ export const list =  async (req, res) => {
       const employe = await Employe.findAll();
       res.status(200).json(employe);
     } catch (error) {
-      console.error("Error fetching employe:", error);
+      // console.error("Error fetching employe:", error);
+      logger.error("error fetching employe list:" , error )
       res.status(500).json({ error: "Internal server error" });
     }
   };
+ 
   
   
   
@@ -36,11 +39,12 @@ export const list =  async (req, res) => {
          joiningDate : joiningDate,
          image: image,
       });
-      console.log('employe created:', newEmploye.toJSON());
+      logger.info('Employee created:', newEmploye.toJSON());
       
       res.send(newEmploye.toJSON());
     } catch (error) {
-      console.error('Error:', error);
+      // console.error('Error:', error);
+      logger.error("error:" , error )
       res.status(500).send('Error creating user.');
     }
   };
@@ -51,6 +55,7 @@ export const list =  async (req, res) => {
   export const update =  async ( req , res) => {
     try{
       const { employeEmail ,employeName ,employeDob , employeCountry , joiningDate } = req.body
+      console.log(employeEmail ,employeName ,employeDob , employeCountry , joiningDate)
       const employe = await Employe.findOne({where : {employeEmail : employeEmail}})
       
       employe.update({
@@ -61,13 +66,16 @@ export const list =  async (req, res) => {
         
       })
   
-      console.log("employeUpdated : " , employe.toJSON())
+      // console.log("employeUpdated : " , employe.toJSON())
+      logger.info("employeUpdated : " , employe.toJSON());
+
   
       res.status(200).send("employeupdated : " , employe.toJSON())
     }
   
     catch(error) {
-      console.log( "employe not updated : " , error )
+      // console.log( "employe not updated : " , error )
+      logger.error("employe not updated:" , error )
       res.status(500).send("employe not found")
     }
   }
@@ -80,7 +88,8 @@ export const deleteEmploye  = async (req, res) => {
 
     if (employe) {
       await employe.destroy();
-      console.log("Employee Deleted:", employe.toJSON());
+      // console.log("Employee Deleted:", employe.toJSON());
+      logger.info("employe deleted : " , employe.toJSON());
       res.status(200).send("Employee Deleted: " + JSON.stringify(employe.toJSON()));
     }
   } catch (error) {

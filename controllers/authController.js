@@ -2,6 +2,7 @@ import express from 'express';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
+import logger from '../logger/logger.js';
 
 const router = express.Router();
 
@@ -29,8 +30,10 @@ export const signup = async (req, res) => {
     });
 
     res.status(201).json({ message: 'User created successfully' });
+    logger.info({message : "user created successfully"});
   } catch (error) {
-    console.error('Error inserting user:', error);
+    // console.error('Error inserting user:', error);
+    logger.error("error inserting user :" , error )
     res.status(500).json({ error: 'Internal Server Error' });
   }
 };

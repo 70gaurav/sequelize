@@ -1,5 +1,6 @@
 import  express  from "express";
 import Countries from "../models/countries.js";
+import logger from "../logger/logger.js";
 
 const router = express.Router()
 
@@ -9,9 +10,11 @@ export const list = async(req , res) => {
     try{
         const countries = await Countries.findAll()
         res.status(200).json(countries)
+        logger.info("countries fetched");
     }
     catch (error) {
-        console.error("Error fetching countries:", error);
+        // console.error("Error fetching countries:", error);
+        logger.error("error fetching countries :" , error )
         res.status(500).json({ error: "Internal server error" });
       }
    

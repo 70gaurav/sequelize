@@ -1,0 +1,283 @@
+[2023-08-10T17:53:11.978] [INFO] default - Employee created: {
+  id: 7,
+  employeName: 'gaurav',
+  employeEmail: 'gk@gmail.com',
+  employeDob: 1999-01-01T18:30:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '07-08-2023',
+  image: 'image',
+  updatedAt: 2023-08-10T12:23:11.840Z,
+  createdAt: 2023-08-10T12:23:11.840Z
+}
+[2023-08-10T17:56:42.690] [ERROR] default - error: ValidationError [SequelizeValidationError]: notNull Violation: employe.employeName cannot be null,
+notNull Violation: employe.employeEmail cannot be null,
+notNull Violation: employe.employeDob cannot be null,
+notNull Violation: employe.employeCountry cannot be null,
+notNull Violation: employe.joiningDate cannot be null
+    at InstanceValidator._validate (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:2426:7)
+    at async employe.create (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1362:12)
+    at async add (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/employeController.js:33:26) {
+  errors: [
+    ValidationErrorItem {
+      message: 'employe.employeName cannot be null',
+      type: 'notNull Violation',
+      path: 'employeName',
+      value: null,
+      origin: 'CORE',
+      instance: [employe],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    },
+    ValidationErrorItem {
+      message: 'employe.employeEmail cannot be null',
+      type: 'notNull Violation',
+      path: 'employeEmail',
+      value: null,
+      origin: 'CORE',
+      instance: [employe],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    },
+    ValidationErrorItem {
+      message: 'employe.employeDob cannot be null',
+      type: 'notNull Violation',
+      path: 'employeDob',
+      value: null,
+      origin: 'CORE',
+      instance: [employe],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    },
+    ValidationErrorItem {
+      message: 'employe.employeCountry cannot be null',
+      type: 'notNull Violation',
+      path: 'employeCountry',
+      value: null,
+      origin: 'CORE',
+      instance: [employe],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    },
+    ValidationErrorItem {
+      message: 'employe.joiningDate cannot be null',
+      type: 'notNull Violation',
+      path: 'joiningDate',
+      value: null,
+      origin: 'CORE',
+      instance: [employe],
+      validatorKey: 'is_null',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}
+[2023-08-10T18:05:30.198] [ERROR] default - employe not updated: Error: WHERE parameter "employeEmail" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at employe.findAll (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async employe.findOne (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1240:12)
+[2023-08-10T18:12:54.761] [ERROR] default - error fetching employe list: ConnectionRefusedError [SequelizeConnectionRefusedError]: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+    at async ConnectionManager.getConnection (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:197:7)
+    at async C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\sequelize.js:305:26
+    at async MySQLQueryInterface.select (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async employe.findAll (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async list (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/employeController.js:11:23) {
+  parent: Error: connect ECONNREFUSED ::1:3306
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -4078,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '::1',
+    port: 3306,
+    fatal: true
+  },
+  original: Error: connect ECONNREFUSED ::1:3306
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -4078,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '::1',
+    port: 3306,
+    fatal: true
+  }
+}
+[2023-08-10T18:17:13.016] [ERROR] default - error fetching countries : ConnectionRefusedError [SequelizeConnectionRefusedError]: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
+    at async C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+    at async ConnectionManager.getConnection (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:197:7)
+    at async C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\sequelize.js:305:26
+    at async MySQLQueryInterface.select (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Coutries.findAll (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async list (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/countryController.js:11:27) {
+  parent: Error: connect ECONNREFUSED ::1:3306
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -4078,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '::1',
+    port: 3306,
+    fatal: true
+  },
+  original: Error: connect ECONNREFUSED ::1:3306
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -4078,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '::1',
+    port: 3306,
+    fatal: true
+  }
+}
+[2023-08-10T18:19:19.319] [INFO] default - countries fetched
+[2023-08-10T18:28:53.457] [ERROR] default - error inserting user : Error: data and salt arguments required
+    at Object.hash (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\bcrypt\bcrypt.js:137:17)
+    at C:\Users\gk172\OneDrive\Desktop\backend\node_modules\bcrypt\promises.js:29:12
+    at new Promise (<anonymous>)
+    at module.exports.promise (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\bcrypt\promises.js:20:12)
+    at Object.hash (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\bcrypt\bcrypt.js:133:25)
+    at signup (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/authController.js:23:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-08-10T18:30:29.637] [ERROR] default - error inserting user : Error: data and salt arguments required
+    at Object.hash (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\bcrypt\bcrypt.js:137:17)
+    at C:\Users\gk172\OneDrive\Desktop\backend\node_modules\bcrypt\promises.js:29:12
+    at new Promise (<anonymous>)
+    at module.exports.promise (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\bcrypt\promises.js:20:12)
+    at Object.hash (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\bcrypt\bcrypt.js:133:25)
+    at signup (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/authController.js:23:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-08-10T18:31:31.516] [ERROR] default - error inserting user : Error: data and salt arguments required
+    at Object.hash (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\bcrypt\bcrypt.js:137:17)
+    at C:\Users\gk172\OneDrive\Desktop\backend\node_modules\bcrypt\promises.js:29:12
+    at new Promise (<anonymous>)
+    at module.exports.promise (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\bcrypt\promises.js:20:12)
+    at Object.hash (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\bcrypt\bcrypt.js:133:25)
+    at signup (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/authController.js:23:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-08-10T18:34:32.322] [INFO] default - Employee created: {
+  id: 8,
+  employeName: 'sachin',
+  employeEmail: 's@gmail.com',
+  employeDob: 2000-10-09T18:30:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '20-07-2022',
+  image: 'image',
+  updatedAt: 2023-08-10T13:04:32.292Z,
+  createdAt: 2023-08-10T13:04:32.292Z
+}
+[2023-08-10T18:35:28.326] [INFO] default - employeUpdated :  {
+  id: 8,
+  employeName: 'suchin',
+  employeEmail: 's@gmail.com',
+  employeDob: 2000-10-09T18:30:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '20-07-2022',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-10T13:05:28.326Z
+}
+[2023-08-10T18:35:28.333] [ERROR] default - employe not updated: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: employeupdated : 
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.writeHead (node:_http_server:344:11)
+    at ServerResponse._implicitHeader (node:_http_server:335:8)
+    at write_ (node:_http_outgoing:886:9)
+    at ServerResponse.end (node:_http_outgoing:994:5)
+    at ServerResponse.send (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\response.js:232:10)
+    at ServerResponse.json (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\response.js:278:15)
+    at ServerResponse.send (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\response.js:162:21)
+    at update (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/employeController.js:72:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_HTTP_INVALID_STATUS_CODE'
+}
+[2023-08-10T18:37:54.621] [INFO] default - employeUpdated :  {
+  id: 8,
+  employeName: 'suchin',
+  employeEmail: 's@gmail.com',
+  employeDob: 2000-10-09T18:30:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '20-07-2022',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-10T13:07:54.620Z
+}
+[2023-08-10T18:37:54.626] [ERROR] default - employe not updated: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: employeupdated : 
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.writeHead (node:_http_server:344:11)
+    at ServerResponse._implicitHeader (node:_http_server:335:8)
+    at write_ (node:_http_outgoing:886:9)
+    at ServerResponse.end (node:_http_outgoing:994:5)
+    at ServerResponse.send (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\response.js:232:10)
+    at ServerResponse.json (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\response.js:278:15)
+    at ServerResponse.send (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\response.js:162:21)
+    at update (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/employeController.js:73:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_HTTP_INVALID_STATUS_CODE'
+}
+[2023-08-10T18:40:20.525] [INFO] default - employeUpdated :  {
+  id: 8,
+  employeName: 'sachin',
+  employeEmail: 's@gmail.com',
+  employeDob: 2000-10-09T18:30:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '20-07-2022',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-10T13:10:20.524Z
+}
+[2023-08-10T18:40:20.533] [ERROR] default - employe not updated: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: employeupdated : 
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.writeHead (node:_http_server:344:11)
+    at ServerResponse._implicitHeader (node:_http_server:335:8)
+    at write_ (node:_http_outgoing:886:9)
+    at ServerResponse.end (node:_http_outgoing:994:5)
+    at ServerResponse.send (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\response.js:232:10)
+    at ServerResponse.json (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\response.js:278:15)
+    at ServerResponse.send (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\response.js:162:21)
+    at update (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/employeController.js:73:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_HTTP_INVALID_STATUS_CODE'
+}
+[2023-08-10T18:50:49.431] [INFO] default - { message: 'user created successfully' }
+[2023-08-10T18:52:10.069] [ERROR] default - error inserting user : ConnectionRefusedError [SequelizeConnectionRefusedError]: connect ECONNREFUSED ::1:3306
+    at ConnectionManager.connect (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24) {
+  parent: Error: connect ECONNREFUSED ::1:3306
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -4078,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '::1',
+    port: 3306,
+    fatal: true
+  },
+  original: Error: connect ECONNREFUSED ::1:3306
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+    errno: -4078,
+    code: 'ECONNREFUSED',
+    syscall: 'connect',
+    address: '::1',
+    port: 3306,
+    fatal: true
+  }
+}
+[2023-08-10T19:00:47.902] [INFO] default - { message: 'user created successfully' }
