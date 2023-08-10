@@ -19,14 +19,14 @@ export const list =  async (req, res) => {
   
   export const add =  async (req, res) => {
     try {
-        const { employeName , employeEmail , employeDob , employeCountry , joiningDate } = req.body
-        console.log(employeName , employeEmail , employeDob , employeCountry , joiningDate)
-        const image = req.file;
+        const { employeName , employeEmail , employeDob , employeCountry , joiningDate ,image} = req.body
+        // console.log(employeName , employeEmail , employeDob , employeCountry , joiningDate)
+        // const image = req.file;
 
   
-      if (!image) {
-        return res.status(400).send('Image file is required.');
-      }
+      // if (!image) {
+      //   return res.status(400).send('Image file is required.');
+      // }
         
       const newEmploye = await Employe.create({
          employeName : employeName ,
@@ -34,7 +34,7 @@ export const list =  async (req, res) => {
          employeDob : employeDob ,
          employeCountry : employeCountry,
          joiningDate : joiningDate,
-         image: image.filename,
+         image: image,
       });
       console.log('employe created:', newEmploye.toJSON());
       
