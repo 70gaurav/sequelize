@@ -2,6 +2,8 @@ import express from 'express';
 import { add, list, update, deleteEmploye } from '../controllers/employeController.js';
 import multer from 'multer';
 import path from 'path';
+import {verifyToken} from "../middleware/middleware.js"
+
 
 const router = express.Router();
 
@@ -16,6 +18,9 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage });
+
+router.use(verifyToken)
+
 
 router.post('/add', upload.single('image'), add);
 router.get('/list', list);

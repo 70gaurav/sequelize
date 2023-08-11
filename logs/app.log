@@ -281,3 +281,276 @@ notNull Violation: employe.joiningDate cannot be null
   }
 }
 [2023-08-10T19:00:47.902] [INFO] default - { message: 'user created successfully' }
+[2023-08-11T10:02:40.778] [INFO] default - Employee updated: {
+  id: 7,
+  employeName: 'gaurav',
+  employeEmail: 'gk@gmail.com',
+  employeDob: 1999-01-01T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '07-08-2023',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-11T04:32:40.753Z
+}
+[2023-08-11T10:03:02.432] [INFO] default - Employee updated: {
+  id: 7,
+  employeName: 'saurav',
+  employeEmail: 'gk@gmail.com',
+  employeDob: 2000-01-01T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '07-08-2023',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-11T04:33:02.422Z
+}
+[2023-08-11T10:11:18.544] [INFO] default - Employee updated: {
+  id: 7,
+  employeName: 'gaurav',
+  employeEmail: 'gk@gmail.com',
+  employeDob: 1999-01-01T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '07-08-2023',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-11T04:41:18.517Z
+}
+[2023-08-11T10:48:28.057] [INFO] default - Employee updated: {
+  id: 7,
+  employeName: 'saurav',
+  employeEmail: 'gk@gmail.com',
+  employeDob: 1999-01-01T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '07-08-2023',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-11T05:18:28.005Z
+}
+[2023-08-11T11:06:07.846] [INFO] default - countries fetched
+[2023-08-11T11:06:19.516] [INFO] default - countries fetched
+[2023-08-11T11:35:45.503] [INFO] default - Employee created: {
+  id: 9,
+  employeName: 'Yash',
+  employeEmail: 'yr@gmail.com',
+  employeDob: 2023-08-12T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '2023-08-09',
+  image: undefined,
+  updatedAt: 2023-08-11T06:05:45.446Z,
+  createdAt: 2023-08-11T06:05:45.446Z
+}
+[2023-08-11T11:37:54.739] [ERROR] default - error: ValidationError [SequelizeValidationError]: string violation: image cannot be an array or an object
+    at InstanceValidator._validate (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:2426:7)
+    at async employe.create (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1362:12)
+    at async add (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/employeController.js:34:26) {
+  errors: [
+    ValidationErrorItem {
+      message: 'image cannot be an array or an object',
+      type: 'string violation',
+      path: 'image',
+      value: [Object],
+      origin: 'CORE',
+      instance: [employe],
+      validatorKey: 'not_a_string',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}
+[2023-08-11T11:38:26.409] [ERROR] default - error: ValidationError [SequelizeValidationError]: string violation: image cannot be an array or an object
+    at InstanceValidator._validate (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:2426:7)
+    at async employe.create (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1362:12)
+    at async add (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/employeController.js:34:26) {
+  errors: [
+    ValidationErrorItem {
+      message: 'image cannot be an array or an object',
+      type: 'string violation',
+      path: 'image',
+      value: [Object],
+      origin: 'CORE',
+      instance: [employe],
+      validatorKey: 'not_a_string',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}
+[2023-08-11T11:40:10.424] [ERROR] default - error: ValidationError [SequelizeValidationError]: string violation: image cannot be an array or an object
+    at InstanceValidator._validate (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:2426:7)
+    at async employe.create (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1362:12)
+    at async add (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/employeController.js:34:26) {
+  errors: [
+    ValidationErrorItem {
+      message: 'image cannot be an array or an object',
+      type: 'string violation',
+      path: 'image',
+      value: [Object],
+      origin: 'CORE',
+      instance: [employe],
+      validatorKey: 'not_a_string',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}
+[2023-08-11T11:42:50.351] [ERROR] default - error: ValidationError [SequelizeValidationError]: string violation: image cannot be an array or an object
+    at InstanceValidator._validate (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:2426:7)
+    at async employe.create (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1362:12)
+    at async add (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/employeController.js:34:26) {
+  errors: [
+    ValidationErrorItem {
+      message: 'image cannot be an array or an object',
+      type: 'string violation',
+      path: 'image',
+      value: [Object],
+      origin: 'CORE',
+      instance: [employe],
+      validatorKey: 'not_a_string',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}
+[2023-08-11T11:45:24.527] [ERROR] default - error: ValidationError [SequelizeValidationError]: string violation: image cannot be an array or an object
+    at InstanceValidator._validate (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:50:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InstanceValidator._validateAndRunHooks (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:60:7)
+    at async InstanceValidator.validate (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\instance-validator.js:54:12)
+    at async model.save (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:2426:7)
+    at async employe.create (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1362:12)
+    at async add (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/employeController.js:35:26) {
+  errors: [
+    ValidationErrorItem {
+      message: 'image cannot be an array or an object',
+      type: 'string violation',
+      path: 'image',
+      value: [Object],
+      origin: 'CORE',
+      instance: [employe],
+      validatorKey: 'not_a_string',
+      validatorName: null,
+      validatorArgs: []
+    }
+  ]
+}
+[2023-08-11T11:46:17.775] [INFO] default - Employee created: {
+  id: 10,
+  employeName: 'Yash TAKLA',
+  employeEmail: 'yrS@gmail.com',
+  employeDob: 2023-08-12T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '2023-08-09',
+  image: 'image',
+  updatedAt: 2023-08-11T06:16:17.729Z,
+  createdAt: 2023-08-11T06:16:17.729Z
+}
+[2023-08-11T12:03:16.163] [INFO] default - employe deleted :  {
+  id: 9,
+  employeName: 'Yash',
+  employeEmail: 'yr@gmail.com',
+  employeDob: '2023-08-12',
+  employeCountry: 'india',
+  joiningDate: '2023-08-09',
+  image: '',
+  createdAt: '2023-08-11',
+  updatedAt: '2023-08-11'
+}
+[2023-08-11T12:10:46.068] [INFO] default - Employee created: {
+  id: 11,
+  employeName: 'yash ',
+  employeEmail: 'yy@gmail.com',
+  employeDob: 2023-07-04T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '2023-08-07',
+  image: 'uploads\\image-1691736046009.png',
+  updatedAt: 2023-08-11T06:40:46.015Z,
+  createdAt: 2023-08-11T06:40:46.015Z
+}
+[2023-08-11T12:12:39.987] [INFO] default - employe deleted :  {
+  id: 11,
+  employeName: 'yash ',
+  employeEmail: 'yy@gmail.com',
+  employeDob: '2023-07-04',
+  employeCountry: 'india',
+  joiningDate: '2023-08-07',
+  image: 'uploads\\image-1691736046009.png',
+  createdAt: '2023-08-11',
+  updatedAt: '2023-08-11'
+}
+[2023-08-11T12:12:47.657] [INFO] default - Employee created: {
+  id: 12,
+  employeName: 'yash ',
+  employeEmail: 'yy@gmail.com',
+  employeDob: 2023-07-04T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '2023-08-07',
+  image: 'image-1691736167637.png',
+  updatedAt: 2023-08-11T06:42:47.642Z,
+  createdAt: 2023-08-11T06:42:47.642Z
+}
+[2023-08-11T12:38:09.488] [INFO] default - Employee updated: {
+  id: 4,
+  employeName: 'deepak',
+  employeEmail: 'd@gmail.com',
+  employeDob: 2023-08-02T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '2023-08-09',
+  image: 'image-1691577864258.jpg',
+  createdAt: '2023-08-09',
+  updatedAt: 2023-08-11T07:08:09.474Z
+}
+[2023-08-11T12:38:18.075] [ERROR] default - error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.header (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\response.js:174:12)
+    at add (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/employeController.js:39:32)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_HTTP_HEADERS_SENT'
+}
+[2023-08-11T13:30:53.966] [WARN] default - Employee not found for update
+[2023-08-11T13:31:01.117] [INFO] default - Employee updated: {
+  id: 4,
+  employeName: 'deepa',
+  employeEmail: 'd@gmail.com',
+  employeDob: 2023-08-02T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '2023-08-09',
+  image: 'image-1691577864258.jpg',
+  createdAt: '2023-08-09',
+  updatedAt: 2023-08-11T08:01:01.102Z
+}
+[2023-08-11T13:31:33.754] [INFO] default - employe deleted :  {
+  id: 4,
+  employeName: 'deepa',
+  employeEmail: 'd@gmail.com',
+  employeDob: '2023-08-02',
+  employeCountry: 'india',
+  joiningDate: '2023-08-09',
+  image: 'image-1691577864258.jpg',
+  createdAt: '2023-08-09',
+  updatedAt: '2023-08-11'
+}
+[2023-08-11T13:32:36.877] [ERROR] default - adding employe with  email
+[2023-08-11T14:46:25.035] [INFO] default - Employee created: {
+  id: 13,
+  employeName: 'ajeet',
+  employeEmail: 'aj@gmail.com',
+  employeDob: 2000-01-06T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '2023-08-01',
+  image: 'http://localhost:3000/uploads/image-1691745384959.png',
+  updatedAt: 2023-08-11T09:16:25.022Z,
+  createdAt: 2023-08-11T09:16:25.022Z
+}

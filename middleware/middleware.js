@@ -14,6 +14,7 @@ export const verifyToken = (req, res, next) => {
     next();
   } catch (error) {
     console.error('Error verifying token:', error);
+    console.log(token)
     res.status(403).json({ error: 'Access denied. Invalid token.' });
   }
 };

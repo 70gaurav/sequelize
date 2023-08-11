@@ -11,7 +11,9 @@ export const list =  async (req, res) => {
       const employe = await Employe.findAll();
       res.status(200).json(employe);
     } catch (error) {
+
       // console.error("Error fetching employe:", error);
+
       logger.error("error fetching employe list:" , error )
       res.status(500).json({ error: "Internal server error" });
     }
@@ -22,9 +24,18 @@ export const list =  async (req, res) => {
   
   export const add =  async (req, res) => {
     try {
-        const { employeName , employeEmail , employeDob , employeCountry , joiningDate ,image} = req.body
+        const { employeName , employeEmail , employeDob , employeCountry , joiningDate} = req.body
+
+        const employe = await Employe.findOne({ where: { employeEmail: employeEmail } });
+
+        if (employe) {
+          console.log("Email already exist :");
+          res.status(500).send("Error adding employee");
+          logger.error("adding employe with existing  email" )
+        }
         // console.log(employeName , employeEmail , employeDob , employeCountry , joiningDate)
-        // const image = req.file;
+        const image = req.file;
+        console.log(image)
 
   
       // if (!image) {
@@ -37,7 +48,7 @@ export const list =  async (req, res) => {
          employeDob : employeDob ,
          employeCountry : employeCountry,
          joiningDate : joiningDate,
-         image: image,
+         image: "http://localhost:3000/uploads/"+image.filename,
       });
       logger.info('Employee created:', newEmploye.toJSON());
       
@@ -52,33 +63,61 @@ export const list =  async (req, res) => {
 
   
   
-  export const update =  async ( req , res) => {
-    try{
-      const { employeEmail ,employeName ,employeDob , employeCountry , joiningDate } = req.body
-      console.log(employeEmail ,employeName ,employeDob , employeCountry , joiningDate)
-      const employe = await Employe.findOne({where : {employeEmail : employeEmail}})
+  // export const update =  async ( req , res) => {
+  //   try{
+  //     const { employeEmail ,employeName ,employeDob , employeCountry , joiningDate } = req.body
+  //     console.log(employeEmail ,employeName ,employeDob , employeCountry , joiningDate)
+  //     const employe = await Employe.findOne({where : {employeEmail : employeEmail}})
       
-      employe.update({
-        employeName : employeName , 
-        employeDob : employeDob,
-        employeCountry : employeCountry ,
-        joiningDate : joiningDate
+  //     employe.update({
+  //       employeName : employeName , 
+  //       employeDob : employeDob,
+  //       employeCountry : employeCountry ,
+  //       joiningDate : joiningDate
         
-      })
+  //     })
   
-      // console.log("employeUpdated : " , employe.toJSON())
-      logger.info("employeUpdated : " , employe.toJSON());
+  //     // console.log("employeUpdated : " , employe.toJSON())
+  //     logger.info("employeUpdated : " , employe.toJSON());
 
   
-      res.status(200).send("employeupdated : " , employe.toJSON())
-    }
+  //     res.status(200).send("employeupdated : " , employe.toJSON())
+  //   }
   
-    catch(error) {
-      // console.log( "employe not updated : " , error )
-      logger.error("employe not updated:" , error )
-      res.status(500).send("employe not found")
+  //   catch(error) {
+  //     // console.log( "employe not updated : " , error )
+  //     logger.error("employe not updated:" , error )
+  //     res.status(500).send("employe not found")
+  //   }
+  // }
+
+  export const update = async (req, res) => {
+    try {
+      const { employeEmail, employeName, employeDob, employeCountry, joiningDate, image } = req.body;
+      console.log(employeEmail, employeName, employeDob, employeCountry, joiningDate ,image);
+      const employe = await Employe.findOne({ where: { employeEmail: employeEmail } });
+  
+      if (!employe) {
+       
+        logger.warn('Employee not found for update');
+        return res.status(404).send('Employee not found');
+      }
+  
+      await employe.update({
+        employeName: employeName,
+        employeDob: employeDob,
+        employeCountry: employeCountry,
+        joiningDate: joiningDate,
+        image: image
+      });
+  
+      logger.info('Employee updated:', employe.toJSON());
+      res.status(200).json(employe.toJSON());
+    } catch (error) {
+      logger.error('Error updating employee:', error);
+      res.status(500).send('Error updating employee');
     }
-  }
+  };
 
 
 export const deleteEmploye  = async (req, res) => {
@@ -89,6 +128,8 @@ export const deleteEmploye  = async (req, res) => {
     if (employe) {
       await employe.destroy();
       // console.log("Employee Deleted:", employe.toJSON());
+
+
       logger.info("employe deleted : " , employe.toJSON());
       res.status(200).send("Employee Deleted: " + JSON.stringify(employe.toJSON()));
     }
