@@ -24,7 +24,7 @@ router.use(verifyToken)
 
 router.post('/add', upload.single('image'), add);
 router.get('/list', list);
-router.post('/update', update);
-router.post('/delete', deleteEmploye);
+router.put('/update', update);
+router.delete('/delete', deleteEmploye);
 
 export default router;

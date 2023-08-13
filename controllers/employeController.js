@@ -30,7 +30,7 @@ export const list =  async (req, res) => {
 
         if (employe) {
           console.log("Email already exist :");
-          res.status(500).send("Error adding employee");
+          res.status(500).send("Email already exist");
           logger.error("adding employe with existing  email" )
         }
         // console.log(employeName , employeEmail , employeDob , employeCountry , joiningDate)
@@ -61,40 +61,10 @@ export const list =  async (req, res) => {
   };
 
 
-  
-  
-  // export const update =  async ( req , res) => {
-  //   try{
-  //     const { employeEmail ,employeName ,employeDob , employeCountry , joiningDate } = req.body
-  //     console.log(employeEmail ,employeName ,employeDob , employeCountry , joiningDate)
-  //     const employe = await Employe.findOne({where : {employeEmail : employeEmail}})
-      
-  //     employe.update({
-  //       employeName : employeName , 
-  //       employeDob : employeDob,
-  //       employeCountry : employeCountry ,
-  //       joiningDate : joiningDate
-        
-  //     })
-  
-  //     // console.log("employeUpdated : " , employe.toJSON())
-  //     logger.info("employeUpdated : " , employe.toJSON());
-
-  
-  //     res.status(200).send("employeupdated : " , employe.toJSON())
-  //   }
-  
-  //   catch(error) {
-  //     // console.log( "employe not updated : " , error )
-  //     logger.error("employe not updated:" , error )
-  //     res.status(500).send("employe not found")
-  //   }
-  // }
-
   export const update = async (req, res) => {
     try {
-      const { employeEmail, employeName, employeDob, employeCountry, joiningDate, image } = req.body;
-      console.log(employeEmail, employeName, employeDob, employeCountry, joiningDate ,image);
+      const { employeEmail, employeName, employeDob, employeCountry, joiningDate, image} = req.body;
+      console.log(employeEmail, employeName, employeDob, employeCountry, joiningDate , image);
       const employe = await Employe.findOne({ where: { employeEmail: employeEmail } });
   
       if (!employe) {

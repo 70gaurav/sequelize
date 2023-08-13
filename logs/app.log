@@ -554,3 +554,506 @@ notNull Violation: employe.joiningDate cannot be null
   updatedAt: 2023-08-11T09:16:25.022Z,
   createdAt: 2023-08-11T09:16:25.022Z
 }
+[2023-08-11T16:00:06.075] [ERROR] default - Error updating employee: ReferenceError: image is not defined
+    at update (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/employeController.js:111:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2023-08-11T16:00:34.546] [ERROR] default - Error updating employee: ReferenceError: image is not defined
+    at update (file:///C:/Users/gk172/OneDrive/Desktop/backend/controllers/employeController.js:97:87)
+    at Layer.handle [as handle_request] (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\router\index.js:280:10)
+    at verifyToken (file:///C:/Users/gk172/OneDrive/Desktop/backend/middleware/middleware.js:14:5)
+    at Layer.handle [as handle_request] (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\express\lib\router\layer.js:95:5)
+[2023-08-11T16:01:02.260] [INFO] default - Employee updated: {
+  id: 7,
+  employeName: 'gaurav',
+  employeEmail: 'gk@gmail.com',
+  employeDob: 2000-01-01T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '07-08-2023',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-11T10:31:02.232Z
+}
+[2023-08-11T16:20:40.020] [INFO] default - Employee updated: {
+  id: 5,
+  employeName: 'New Name',
+  employeEmail: 'd@gmail.com',
+  employeDob: 2023-08-15T00:00:00.000Z,
+  employeCountry: 'New Country',
+  joiningDate: '01-02-20023',
+  image: 'image-1691577866553.jpg',
+  createdAt: '2023-08-09',
+  updatedAt: 2023-08-11T10:50:39.997Z
+}
+[2023-08-11T16:20:40.028] [INFO] default - Employee updated: {
+  id: 5,
+  employeName: 'New Name',
+  employeEmail: 'd@gmail.com',
+  employeDob: 2023-08-15T00:00:00.000Z,
+  employeCountry: 'New Country',
+  joiningDate: '01-02-20023',
+  image: 'image-1691577866553.jpg',
+  createdAt: '2023-08-09',
+  updatedAt: 2023-08-11T10:50:40.003Z
+}
+[2023-08-11T16:20:40.057] [INFO] default - Employee updated: {
+  id: 5,
+  employeName: 'New Name',
+  employeEmail: 'd@gmail.com',
+  employeDob: 2023-08-15T00:00:00.000Z,
+  employeCountry: 'New Country',
+  joiningDate: '01-02-20023',
+  image: 'image-1691577866553.jpg',
+  createdAt: '2023-08-09',
+  updatedAt: 2023-08-11T10:50:40.049Z
+}
+[2023-08-11T16:20:40.060] [INFO] default - Employee updated: {
+  id: 5,
+  employeName: 'New Name',
+  employeEmail: 'd@gmail.com',
+  employeDob: 2023-08-15T00:00:00.000Z,
+  employeCountry: 'New Country',
+  joiningDate: '01-02-20023',
+  image: 'image-1691577866553.jpg',
+  createdAt: '2023-08-09',
+  updatedAt: 2023-08-11T10:50:40.051Z
+}
+[2023-08-11T16:21:47.003] [WARN] default - Employee not found for update
+[2023-08-11T16:21:47.005] [WARN] default - Employee not found for update
+[2023-08-11T16:21:47.040] [WARN] default - Employee not found for update
+[2023-08-11T16:21:47.041] [WARN] default - Employee not found for update
+[2023-08-11T16:21:47.989] [INFO] default - Employee updated: {
+  id: 8,
+  employeName: 'New Name',
+  employeEmail: 's@gmail.com',
+  employeDob: 2023-08-15T00:00:00.000Z,
+  employeCountry: 'New Country',
+  joiningDate: '01-02-20023',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-11T10:51:47.982Z
+}
+[2023-08-11T16:21:47.995] [INFO] default - Employee updated: {
+  id: 8,
+  employeName: 'New Name',
+  employeEmail: 's@gmail.com',
+  employeDob: 2023-08-15T00:00:00.000Z,
+  employeCountry: 'New Country',
+  joiningDate: '01-02-20023',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-11T10:51:47.979Z
+}
+[2023-08-11T16:21:48.036] [INFO] default - Employee updated: {
+  id: 8,
+  employeName: 'New Name',
+  employeEmail: 's@gmail.com',
+  employeDob: 2023-08-15T00:00:00.000Z,
+  employeCountry: 'New Country',
+  joiningDate: '01-02-20023',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-11T10:51:48.034Z
+}
+[2023-08-11T16:21:48.047] [INFO] default - Employee updated: {
+  id: 8,
+  employeName: 'New Name',
+  employeEmail: 's@gmail.com',
+  employeDob: 2023-08-15T00:00:00.000Z,
+  employeCountry: 'New Country',
+  joiningDate: '01-02-20023',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-11T10:51:48.045Z
+}
+[2023-08-11T16:22:03.008] [INFO] default - Employee updated: {
+  id: 8,
+  employeName: 'New Name',
+  employeEmail: 's@gmail.com',
+  employeDob: 2023-08-15T00:00:00.000Z,
+  employeCountry: 'New Country',
+  joiningDate: '01-02-20023',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-11T10:52:03.001Z
+}
+[2023-08-11T16:22:03.066] [INFO] default - Employee updated: {
+  id: 8,
+  employeName: 'New Name',
+  employeEmail: 's@gmail.com',
+  employeDob: 2023-08-15T00:00:00.000Z,
+  employeCountry: 'New Country',
+  joiningDate: '01-02-20023',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-11T10:52:03.052Z
+}
+[2023-08-11T16:22:03.635] [INFO] default - Employee updated: {
+  id: 8,
+  employeName: 'New Name',
+  employeEmail: 's@gmail.com',
+  employeDob: 2023-08-15T00:00:00.000Z,
+  employeCountry: 'New Country',
+  joiningDate: '01-02-20023',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-11T10:52:03.622Z
+}
+[2023-08-11T16:22:03.644] [INFO] default - Employee updated: {
+  id: 8,
+  employeName: 'New Name',
+  employeEmail: 's@gmail.com',
+  employeDob: 2023-08-15T00:00:00.000Z,
+  employeCountry: 'New Country',
+  joiningDate: '01-02-20023',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-11T10:52:03.610Z
+}
+[2023-08-11T16:26:24.982] [INFO] default - Employee updated: {
+  id: 8,
+  employeName: 'New Name',
+  employeEmail: 's@gmail.com',
+  employeDob: 2023-08-15T00:00:00.000Z,
+  employeCountry: 'New Country',
+  joiningDate: '01-02-20023',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-11T10:56:24.979Z
+}
+[2023-08-11T16:26:24.986] [INFO] default - Employee updated: {
+  id: 8,
+  employeName: 'New Name',
+  employeEmail: 's@gmail.com',
+  employeDob: 2023-08-15T00:00:00.000Z,
+  employeCountry: 'New Country',
+  joiningDate: '01-02-20023',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-11T10:56:24.980Z
+}
+[2023-08-11T16:29:53.331] [ERROR] default - Error updating employee: Error: WHERE parameter "employeEmail" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at employe.findAll (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async employe.findOne (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1240:12)
+[2023-08-11T16:30:35.004] [ERROR] default - Error updating employee: Error: WHERE parameter "employeEmail" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at employe.findAll (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async employe.findOne (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1240:12)
+[2023-08-11T16:31:24.293] [ERROR] default - Error updating employee: Error: WHERE parameter "employeEmail" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at employe.findAll (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async employe.findOne (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1240:12)
+[2023-08-11T16:36:38.337] [ERROR] default - Error updating employee: Error: WHERE parameter "employeEmail" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at employe.findAll (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async employe.findOne (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1240:12)
+[2023-08-11T16:41:40.906] [ERROR] default - Error updating employee: Error: WHERE parameter "employeEmail" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at employe.findAll (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async employe.findOne (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1240:12)
+[2023-08-11T16:55:19.981] [ERROR] default - Error updating employee: Error: WHERE parameter "employeEmail" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at employe.findAll (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async employe.findOne (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1240:12)
+[2023-08-11T16:55:19.988] [ERROR] default - Error updating employee: Error: WHERE parameter "employeEmail" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at employe.findAll (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async employe.findOne (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1240:12)
+[2023-08-11T16:55:20.002] [ERROR] default - Error updating employee: Error: WHERE parameter "employeEmail" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at employe.findAll (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async employe.findOne (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1240:12)
+[2023-08-11T16:55:20.011] [ERROR] default - Error updating employee: Error: WHERE parameter "employeEmail" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at employe.findAll (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async employe.findOne (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1240:12)
+[2023-08-11T16:55:20.025] [ERROR] default - Error updating employee: Error: WHERE parameter "employeEmail" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at employe.findAll (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async employe.findOne (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1240:12)
+[2023-08-11T16:55:20.030] [ERROR] default - Error updating employee: Error: WHERE parameter "employeEmail" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1743:13)
+    at C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1734:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1732:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2075:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-generator.js:988:28)
+    at MySQLQueryInterface.select (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:59)
+    at employe.findAll (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async employe.findOne (C:\Users\gk172\OneDrive\Desktop\backend\node_modules\sequelize\lib\model.js:1240:12)
+[2023-08-11T16:55:33.978] [WARN] default - Employee not found for update
+[2023-08-11T16:55:33.979] [WARN] default - Employee not found for update
+[2023-08-11T16:55:33.995] [WARN] default - Employee not found for update
+[2023-08-11T16:55:33.997] [WARN] default - Employee not found for update
+[2023-08-11T16:55:34.014] [WARN] default - Employee not found for update
+[2023-08-11T16:55:34.016] [WARN] default - Employee not found for update
+[2023-08-11T16:55:40.967] [WARN] default - Employee not found for update
+[2023-08-11T16:55:40.969] [WARN] default - Employee not found for update
+[2023-08-11T16:55:40.986] [WARN] default - Employee not found for update
+[2023-08-11T16:55:40.999] [WARN] default - Employee not found for update
+[2023-08-11T16:55:42.968] [WARN] default - Employee not found for update
+[2023-08-11T16:55:42.971] [WARN] default - Employee not found for update
+[2023-08-11T16:55:42.982] [WARN] default - Employee not found for update
+[2023-08-11T16:55:42.983] [WARN] default - Employee not found for update
+[2023-08-11T16:55:54.982] [WARN] default - Employee not found for update
+[2023-08-11T16:55:54.984] [WARN] default - Employee not found for update
+[2023-08-11T16:55:55.002] [WARN] default - Employee not found for update
+[2023-08-11T16:55:55.005] [WARN] default - Employee not found for update
+[2023-08-11T16:55:55.037] [WARN] default - Employee not found for update
+[2023-08-11T16:55:55.040] [WARN] default - Employee not found for update
+[2023-08-11T16:55:56.966] [WARN] default - Employee not found for update
+[2023-08-11T16:55:56.967] [WARN] default - Employee not found for update
+[2023-08-11T16:55:56.981] [WARN] default - Employee not found for update
+[2023-08-11T16:55:56.982] [WARN] default - Employee not found for update
+[2023-08-11T16:56:12.973] [WARN] default - Employee not found for update
+[2023-08-11T16:56:12.976] [WARN] default - Employee not found for update
+[2023-08-11T16:56:12.988] [WARN] default - Employee not found for update
+[2023-08-11T16:56:12.989] [WARN] default - Employee not found for update
+[2023-08-11T16:56:13.002] [WARN] default - Employee not found for update
+[2023-08-11T16:56:13.003] [WARN] default - Employee not found for update
+[2023-08-11T16:56:45.979] [WARN] default - Employee not found for update
+[2023-08-11T16:56:45.980] [WARN] default - Employee not found for update
+[2023-08-11T16:56:46.005] [WARN] default - Employee not found for update
+[2023-08-11T16:56:46.006] [WARN] default - Employee not found for update
+[2023-08-11T16:57:33.316] [WARN] default - Employee not found for update
+[2023-08-11T16:57:33.317] [WARN] default - Employee not found for update
+[2023-08-11T16:57:33.346] [WARN] default - Employee not found for update
+[2023-08-11T16:57:33.348] [WARN] default - Employee not found for update
+[2023-08-11T16:57:33.971] [WARN] default - Employee not found for update
+[2023-08-11T16:57:33.979] [WARN] default - Employee not found for update
+[2023-08-11T16:57:33.997] [WARN] default - Employee not found for update
+[2023-08-11T16:57:33.999] [WARN] default - Employee not found for update
+[2023-08-11T16:57:34.016] [WARN] default - Employee not found for update
+[2023-08-11T16:57:34.017] [WARN] default - Employee not found for update
+[2023-08-11T16:57:47.350] [WARN] default - Employee not found for update
+[2023-08-11T16:57:47.351] [WARN] default - Employee not found for update
+[2023-08-11T16:57:47.479] [WARN] default - Employee not found for update
+[2023-08-11T16:57:47.480] [WARN] default - Employee not found for update
+[2023-08-11T16:57:48.002] [WARN] default - Employee not found for update
+[2023-08-11T16:57:48.004] [WARN] default - Employee not found for update
+[2023-08-11T16:57:48.652] [WARN] default - Employee not found for update
+[2023-08-11T16:57:48.654] [WARN] default - Employee not found for update
+[2023-08-11T16:57:49.521] [WARN] default - Employee not found for update
+[2023-08-11T16:57:49.522] [WARN] default - Employee not found for update
+[2023-08-11T16:57:50.724] [WARN] default - Employee not found for update
+[2023-08-11T16:57:50.725] [WARN] default - Employee not found for update
+[2023-08-11T16:57:51.214] [WARN] default - Employee not found for update
+[2023-08-11T16:57:51.215] [WARN] default - Employee not found for update
+[2023-08-11T16:57:51.465] [WARN] default - Employee not found for update
+[2023-08-11T16:57:51.471] [WARN] default - Employee not found for update
+[2023-08-11T16:57:51.622] [WARN] default - Employee not found for update
+[2023-08-11T16:57:51.623] [WARN] default - Employee not found for update
+[2023-08-11T16:57:51.773] [WARN] default - Employee not found for update
+[2023-08-11T16:57:51.776] [WARN] default - Employee not found for update
+[2023-08-11T16:57:51.894] [WARN] default - Employee not found for update
+[2023-08-11T16:57:51.895] [WARN] default - Employee not found for update
+[2023-08-11T16:57:53.906] [WARN] default - Employee not found for update
+[2023-08-11T16:57:53.907] [WARN] default - Employee not found for update
+[2023-08-11T16:57:54.075] [WARN] default - Employee not found for update
+[2023-08-11T16:57:54.076] [WARN] default - Employee not found for update
+[2023-08-11T16:57:54.311] [WARN] default - Employee not found for update
+[2023-08-11T16:57:54.313] [WARN] default - Employee not found for update
+[2023-08-11T16:57:54.446] [WARN] default - Employee not found for update
+[2023-08-11T16:57:54.447] [WARN] default - Employee not found for update
+[2023-08-11T16:57:54.575] [WARN] default - Employee not found for update
+[2023-08-11T16:57:54.577] [WARN] default - Employee not found for update
+[2023-08-11T16:57:54.792] [WARN] default - Employee not found for update
+[2023-08-11T16:57:54.793] [WARN] default - Employee not found for update
+[2023-08-11T16:58:01.705] [WARN] default - Employee not found for update
+[2023-08-11T16:58:01.707] [WARN] default - Employee not found for update
+[2023-08-11T16:58:03.048] [WARN] default - Employee not found for update
+[2023-08-11T16:58:03.054] [WARN] default - Employee not found for update
+[2023-08-11T16:58:03.228] [WARN] default - Employee not found for update
+[2023-08-11T16:58:03.229] [WARN] default - Employee not found for update
+[2023-08-11T16:58:03.380] [WARN] default - Employee not found for update
+[2023-08-11T16:58:03.381] [WARN] default - Employee not found for update
+[2023-08-11T16:58:05.611] [WARN] default - Employee not found for update
+[2023-08-11T16:58:05.613] [WARN] default - Employee not found for update
+[2023-08-11T16:58:20.050] [WARN] default - Employee not found for update
+[2023-08-11T16:58:20.056] [WARN] default - Employee not found for update
+[2023-08-11T16:58:25.572] [INFO] default - Employee created: {
+  id: 14,
+  employeName: 'ss',
+  employeEmail: 'ss@ss.com',
+  employeDob: 2023-08-06T00:00:00.000Z,
+  employeCountry: 'ddd',
+  joiningDate: '2023-08-23',
+  image: 'http://localhost:3000/uploads/image-1691753305542.jpg',
+  updatedAt: 2023-08-11T11:28:25.556Z,
+  createdAt: 2023-08-11T11:28:25.556Z
+}
+[2023-08-11T16:58:31.997] [ERROR] default - adding employe with existing  email
+[2023-08-11T16:58:32.009] [INFO] default - Employee created: {
+  id: 15,
+  employeName: 'ss',
+  employeEmail: 'ss@ss.com',
+  employeDob: 2023-08-06T00:00:00.000Z,
+  employeCountry: 'ddd',
+  joiningDate: '2023-08-23',
+  image: 'http://localhost:3000/uploads/image-1691753311978.jpg',
+  updatedAt: 2023-08-11T11:28:32.000Z,
+  createdAt: 2023-08-11T11:28:32.000Z
+}
+[2023-08-11T16:59:35.007] [ERROR] default - adding employe with existing  email
+[2023-08-11T16:59:35.036] [INFO] default - Employee created: {
+  id: 16,
+  employeName: 'ss',
+  employeEmail: 'ss@ss.com',
+  employeDob: 2023-08-06T00:00:00.000Z,
+  employeCountry: 'ddd',
+  joiningDate: '2023-08-23',
+  image: 'http://localhost:3000/uploads/image-1691753374940.jpg',
+  updatedAt: 2023-08-11T11:29:35.014Z,
+  createdAt: 2023-08-11T11:29:35.014Z
+}
+[2023-08-11T17:04:35.618] [WARN] default - Employee not found for update
+[2023-08-11T17:04:35.623] [WARN] default - Employee not found for update
+[2023-08-11T17:04:36.056] [WARN] default - Employee not found for update
+[2023-08-11T17:04:36.057] [WARN] default - Employee not found for update
+[2023-08-11T17:06:35.975] [WARN] default - Employee not found for update
+[2023-08-11T17:06:35.976] [WARN] default - Employee not found for update
+[2023-08-11T17:06:35.993] [WARN] default - Employee not found for update
+[2023-08-11T17:06:36.001] [WARN] default - Employee not found for update
+[2023-08-11T17:09:52.429] [INFO] default - Employee updated: {
+  id: 5,
+  employeName: 'gaurav',
+  employeEmail: 'd@gmail.com',
+  employeDob: 2023-08-01T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '2023-08-01',
+  image: 'image-1691577866553.jpg',
+  createdAt: '2023-08-09',
+  updatedAt: 2023-08-11T11:39:52.412Z
+}
+[2023-08-11T17:10:30.082] [INFO] default - Employee updated: {
+  id: 5,
+  employeName: 'gaurav',
+  employeEmail: 'd@gmail.com',
+  employeDob: 2023-08-02T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '2023-08-01',
+  image: 'image-1691577866553.jpg',
+  createdAt: '2023-08-09',
+  updatedAt: 2023-08-11T11:40:30.076Z
+}
+[2023-08-11T17:14:51.027] [INFO] default - Employee updated: {
+  id: 5,
+  employeName: 'saurav',
+  employeEmail: 'd@gmail.com',
+  employeDob: 2023-08-02T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '2023-08-01',
+  image: 'image-1691577866553.jpg',
+  createdAt: '2023-08-09',
+  updatedAt: 2023-08-11T11:44:51.020Z
+}
+[2023-08-11T17:43:18.805] [INFO] default - Employee updated: {
+  id: 10,
+  employeName: 'yash ji',
+  employeEmail: 'yrS@gmail.com',
+  employeDob: 2023-08-01T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '2023-08-02',
+  image: 'image',
+  createdAt: '2023-08-11',
+  updatedAt: 2023-08-11T12:13:18.792Z
+}
+[2023-08-13T20:34:48.698] [INFO] default - employe deleted :  {
+  id: 5,
+  employeName: 'saurav',
+  employeEmail: 'd@gmail.com',
+  employeDob: '2023-08-02',
+  employeCountry: 'india',
+  joiningDate: '2023-08-01',
+  image: 'image-1691577866553.jpg',
+  createdAt: '2023-08-09',
+  updatedAt: '2023-08-11'
+}
+[2023-08-13T20:36:28.005] [INFO] default - Employee updated: {
+  id: 7,
+  employeName: '',
+  employeEmail: 'gk@gmail.com',
+  employeDob: 1870-01-01T00:00:00.000Z,
+  employeCountry: 'india',
+  joiningDate: '07-08-2023',
+  image: 'image',
+  createdAt: '2023-08-10',
+  updatedAt: 2023-08-13T15:06:27.994Z
+}
