@@ -9,6 +9,6 @@ const router = express.Router()
 router.use(verifyToken)
 
 router.get("/list" ,list)
-// router.post("/add" ,add)
+
 
 export default router
